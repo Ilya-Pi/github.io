@@ -2,72 +2,272 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ilya Piven | QA Engineer</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Ilya Piven - QA Engineer Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f5f5f5;
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 24px auto;
+      background: #fff;
+      display: flex;
+      box-shadow: 0px 4px 32px rgba(0,0,0,0.08);
+    }
+    .sidebar {
+      background: #222b34;
+      color: #fff;
+      width: 270px;
+      min-height: 100vh;
+      padding: 32px 24px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 18px;
+      border: 4px solid #fff;
+      background: #d9d9d9;
+    }
+    .name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+    .position {
+      font-size: 1rem;
+      letter-spacing: 2px;
+      margin-bottom: 22px;
+      text-align: center;
+      color: #c6c6c6;
+      font-weight: 400;
+    }
+    .section-title {
+      font-size: 1.15rem;
+      letter-spacing: 1px;
+      font-weight: 700;
+      margin: 30px 0 10px;
+    }
+    .details, .languages {
+      width: 100%;
+    }
+    .details-info {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .details-info a {
+      color: #aad8ff;
+      text-decoration: none;
+    }
+    .languages-list {
+      margin-top: 10px;
+      font-size: 0.97rem;
+    }
+    .lang-label {
+      font-weight: 500;
+      display: flex;
+      margin-bottom: 8px;
+      justify-content: space-between;
+    }
+    .lang-bar {
+      background: #16202a;
+      height: 7px;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 14px;
+    }
+    .lang-bar-inner {
+      height: 100%;
+      border-radius: 4px;
+      background: #aad8ff;
+    }
+    /* Main content */
+    .main {
+      flex: 1;
+      padding: 40px 45px 40px 45px;
+      color: #181818;
+      background: #fff;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .main h2, .main h3 {
+      margin-top: 24px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    .main ul {
+      margin-top: 8px;
+      margin-bottom: 16px;
+      padding-left: 22px;
+    }
+    .main ul li {
+      margin-bottom: 6px;
+    }
+    .main strong {
+      font-weight: 700;
+    }
+    .job-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 2px;
+    }
+    .job-period {
+      font-size: 0.97rem;
+      font-weight: 400;
+      color: #222b34;
+    }
+    .job-projects {
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+    .job-tools {
+      font-size: 0.93rem;
+      color: #444;
+      margin-bottom: 5px;
+      font-style: italic;
+    }
+    @media (max-width: 900px) {
+      .container { flex-direction: column; }
+      .sidebar { width: 100%; min-height: 0; padding: 24px 8vw; }
+      .main { padding: 32px 6vw; }
+    }
+    @media (max-width: 600px) {
+      .main { padding: 24px 2vw; }
+      .sidebar { padding: 22px 2vw; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Ilya Piven</h1>
-  <p class="contact">QA Engineer | Kyiv, Ukraine | ilya.piven98@gmail.com | +38(093)115-46-19</p>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="image1" alt="Profile picture" class="avatar">
+      <div class="name">Ilya Piven</div>
+      <div class="position">QA Engineer</div>
+      <div class="section-title">Details</div>
+      <div class="details">
+        <div class="details-info">
+          Kyiv, Ukraine<br>
+          +38(093)115-46-19<br>
+          <a href="mailto:Ilya.piven95@gmail.com">Ilya.piven95@gmail.com</a><br>
+          Date of Birth: 13.01.1998
+        </div>
+      </div>
+      <div class="section-title">Languages</div>
+      <div class="languages-list">
+        <div class="lang-label">
+          <span>Ukrainian/Russian</span>
+        </div>
+        <div class="lang-bar"><div class="lang-bar-inner" style="width: 100%"></div></div>
+        <div class="lang-label">
+          <span>English</span>
+        </div>
+        <div class="lang-bar"><div class="lang-bar-inner" style="width: 72%"></div></div>
+      </div>
+    </aside>
+    <main class="main">
+      <h2>Profile</h2>
+      <strong>Tools:</strong>
+      <ul>
+        <li>Jira, Azure DevOps – creating and managing bug reports, detailing reproduction steps, attaching necessary materials (screenshots, logs), and managing test cases and test plans.</li>
+        <li>TestRail – Creating and keeping Test Cases and Test Suites.</li>
+        <li>Postman, Swagger – API testing, sending HTTP requests (GET, POST, PUT, DELETE), validating responses, working with authentication, and testing different data formats (JSON, XML).</li>
+        <li>Confluence – Create and store process information (guides) for new employees. Also used to read and test product requirements.</li>
+        <li>Chrome DevTools – Reading information directly from the console or a web socket to find the cause of the bug.</li>
+      </ul>
+      <div><strong>OS:</strong> Windows, macOS, Android, iOS</div>
 
-  <div class="section">
-    <h2>Profile</h2>
-    <p>Experienced QA Engineer with a strong background in manual testing for web, mobile, and VR/AR projects. Skilled in improving product quality, onboarding team members, and supporting innovative technologies like AI and NLP systems.</p>
-  </div>
+      <h2>Accomplishments as a specialist</h2>
+      <ul>
+        <li>Improved the quality of products within the company;</li>
+        <li>Suggested ideas for improving the product and user experience;</li>
+        <li>Onboarded new employees in the team;</li>
+        <li>Conducted interviews for the QA team;</li>
+      </ul>
 
-  <div class="section">
-    <h2>Skills & Tools</h2>
-    <ul>
-      <li>Test Management: Jira, Azure DevOps, TestRail, Confluence</li>
-      <li>API Testing: Postman, Swagger</li>
-      <li>Debugging: Chrome DevTools, Safari Web Inspector</li>
-      <li>Load Testing: JMeter, WebSocket tools</li>
-      <li>Platforms: Windows, macOS, Android, iOS</li>
-      <li>Databases: Cosmos DB, MySQL, PostgreSQL, MongoDB</li>
-      <li>Other Tools: Adobe XD, Figma, PhpStorm, MS SQL</li>
-    </ul>
-  </div>
+      <h2>Personal Qualities</h2>
+      <ul>
+        <li>Self-improvement;</li>
+        <li>Quick learner, problem-solver, detail-oriented;</li>
+        <li>Strong communication skills, adaptability, and a proactive mindset;</li>
+        <li>Ready to contribute to innovative projects and drive software excellence;</li>
+      </ul>
 
-  <div class="section">
-    <h2>Work Experience</h2>
-    <p><strong>Bridge Learning Tech</strong> (5 years)<br>
-    VR/AR education projects, LMS for major automotive brands, AI tools, chatbot platforms.<br>
-    - Manual and API testing<br>
-    - NLP and computer vision feature testing<br>
-    - VR/AR testing with Oculus Rift and mobile platforms<br>
-    - Load testing, localization testing for 12+ countries</p>
+      <h2>Employment History</h2>
+      <div class="job-title">Bridge Learning Tech <span class="job-period">| 5 years</span></div>
+      <div class="job-projects"><strong>Projects:</strong> VR/AR for school lessons, LMS for Hyundai, Kia, Ducati, Harley Davidson, LiveWire company, TNA for Porsche company, Notes, Chat bots, AI tools.</div>
+      <div class="job-tools"><strong>Tools:</strong> Azure DevOps, Cosmos DB, Postman, Swagger, Chrome DevTools, Safari Web Inspector, Adobe XD, LUIS, Google Dialogflow, JMeter</div>
+      <strong>Responsibilities:</strong>
+      <ul>
+        <li>Performed API testing using Postman and Swagger.</li>
+        <li>Designed and executed manual test cases, increasing test coverage.</li>
+        <li>Worked with AI-based LMS systems, testing NLP, Computer Vision, and Data Science functionalities.</li>
+        <li>Used Azure DevOps for bug tracking and test case management.</li>
+        <li>Filling chatbots with content based on the Cosmos DB database.</li>
+        <li>Generation of barcodes for VR/AR projects, description and publication on the website of various courses.</li>
+        <li>Load testing for WebSocket with Jmeter.</li>
+        <li>Testing with different methods VR (Oculus Rift 2) projects.</li>
+        <li>Testing with different methods AR (Android, iOS) projects.</li>
+        <li>Localization testing for over 12 countries.</li>
+      </ul>
 
-    <p><strong>Omnicore</strong> (3 years)<br>
-    E-commerce testing (Adidas, Puma, New Balance, Saks85).<br>
-    - Functional, regression, and UI/UX testing<br>
-    - Test documentation and collaboration with developers</p>
+      <div class="job-title">Omnicore <span class="job-period">| 3 years</span></div>
+      <div class="job-projects"><strong>Projects:</strong> E-commerce (Adidas, Puma, New Balance, MD-Fashion, Saks85)</div>
+      <div class="job-tools"><strong>Tools:</strong> Jira, TestRail, Confluence, Chrome DevTools, Figma, PhpStorm, MySQL, PostgreSQL, MongoDB</div>
+      <strong>Responsibilities:</strong>
+      <ul>
+        <li>Designed and executed manual test cases, increasing test coverage.</li>
+        <li>Conducted functional, regression, and UI/UX testing for websites and mobile applications.</li>
+        <li>Collaborated with developers and business analysts to refine product requirements.</li>
+        <li>Used Jira and Confluence for bug tracking and test case management.</li>
+        <li>Developed and maintained test documentation, including test plans and reports.</li>
+        <li>Tested e-commerce platforms and B2C online stores, improving checkout process efficiency for major brands.</li>
+      </ul>
 
-    <p><strong>Artsyl Technologies, Inc.</strong> (1 year)<br>
-    Invoice/Order automation projects.<br>
-    - Full-cycle testing (Desktop, Web, PC)<br>
-    - Test suite creation and support<br>
-    - Collaboration with support and development teams</p>
-  </div>
+      <div class="job-title">Artsyl Technologies, Inc. <span class="job-period">| 1 year</span></div>
+      <div class="job-projects"><strong>Projects:</strong> Invoice Action, Order Action, Document processing, Checking the application with different antiviruses.</div>
+      <div class="job-tools"><strong>Tools:</strong> Jira, TestRail, Confluence, Postman, Chrome DevTools, MS SQL</div>
+      <strong>Responsibilities:</strong>
+      <ul>
+        <li>Tested the product all the way from idea to production support.</li>
+        <li>Applied all types of testing (except White/Gray box testing).</li>
+        <li>Requirement analysis.</li>
+        <li>Work with Desktop, Web, and PC platforms.</li>
+        <li>Creating and keeping Test Cases and Test Suites (TestRail).</li>
+        <li>Helping the support department set up documents in the application.</li>
+      </ul>
 
-  <div class="section">
-    <h2>Education</h2>
-    <ul>
-      <li>Master, “DUT”, “StateUniversity of Telecommunications” faculty, direction “Radio Engineering” (2019–2021)</li>
-      <li>Bachelor, “DUT”, “StateUniversity of Telecommunications” faculty, direction “Information and Telecommunication Networks” (2015–2019)</li>
-    </ul>
-  </div>
+      <h2>Education</h2>
+      <div>
+        <strong>Master, “DUT”, “State University of Telecommunications”</strong> faculty, direction “Radio Engineering”<br>
+        <span class="job-period">2019–2021</span>
+      </div>
+      <div>
+        <strong>Bachelor, “DUT”, “State University of Telecommunications”</strong> faculty, direction “Information and Telecommunication Networks”<br>
+        <span class="job-period">2015–2019</span>
+      </div>
 
-  <div class="section">
-    <h2>Courses & Certifications</h2>
-    <ul>
-      <li>HP ATA – Networks (2017)</li>
-      <li>HP ATA – Connected Devices (2016)</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Languages</h2>
-    <p>Ukrainian, Russian, English (B2+)</p>
+      <h2>Courses</h2>
+      <div>
+        <strong>Hewlett Packard Enterprise (HPE Accredited technical Associate (HPE ATA) – Networks)</strong><br>
+        <span class="job-period">April 2017</span>
+      </div>
+      <div>
+        <strong>Hp ExpertOne (HP Accredited Technical Associate. HP ATA – Connected Devices)</strong><br>
+        <span class="job-period">May 2016</span>
+      </div>
+    </main>
   </div>
 </body>
 </html>
